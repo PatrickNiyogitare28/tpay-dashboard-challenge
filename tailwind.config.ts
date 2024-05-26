@@ -26,9 +26,15 @@ const config = {
         "primary-200": "#9f86c0",
         "primary-300": "#be95c4",
         "primary-400": "#e0b1cb",
-        "switch": "#bee9e8",
         "success": "#52b788",
-        "danger": "#e63946",
+        "switch": {
+          DEFAULT: "#bee9e8",
+          light: "#caf0f8"
+        },
+        "danger": {
+          DEFAULT: "#e63946",
+          light: "#ffe5ec"
+        },
         "warning": "#e9c46a",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
