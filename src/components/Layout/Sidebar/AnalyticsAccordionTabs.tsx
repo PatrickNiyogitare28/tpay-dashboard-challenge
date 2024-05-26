@@ -1,9 +1,10 @@
-"use client";
-import { AccordionContent } from "@/components/ui/accordion";
-import useAccordionTabs from "./hooks/useAccordionTabs";
+'use client';
+import { AccordionContent } from '@/components/ui/accordion';
+import useAccordionTabs from './hooks/useAccordionTabs';
 
 export default function AnalyticsAccordionTabs() {
-  const { onHandleAnalyticsTab, accordionTabs, activeAccordionIndex } = useAccordionTabs();
+  const { onHandleAnalyticsTab, accordionTabs, activeAccordionIndex } =
+    useAccordionTabs();
 
   return (
     <div>
@@ -11,7 +12,7 @@ export default function AnalyticsAccordionTabs() {
         <AccordionContent
           onClick={() => onHandleAnalyticsTab(index)}
           className={`${
-            index === activeAccordionIndex ? "bg-primary-100" : ""
+            index === activeAccordionIndex ? 'bg-primary-100' : ''
           } flex flex-col justify-center h-10 rounded-md cursor-pointer`}
           key={index}
         >
@@ -19,7 +20,7 @@ export default function AnalyticsAccordionTabs() {
             <div className={`w-2 h-2 bg-${acc.color} rounded-full`} />
             <label
               className={`text-white ${
-                index === activeAccordionIndex ? "opacity-100" : "opacity-50"
+                index === activeAccordionIndex ? 'opacity-100' : 'opacity-50'
               } text-[13px] hover:opacity-100`}
             >
               {acc.label}

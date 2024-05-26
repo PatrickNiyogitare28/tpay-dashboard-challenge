@@ -1,31 +1,31 @@
-import { useState } from "react";
+import { useState } from 'react';
 
-export default function useAccordingTabs(){
-    const [activeAccordionIndex, setActiveAccordionIndex] = useState(0);
+export default function useAccordingTabs() {
+  const [activeAccordionIndex, setActiveAccordionIndex] = useState(0);
 
-    const accordionTabs = [
-        {
-            label: "All Analytics",
-            color: "success"
-        },
-        {
-            label: "Favorite",
-            color: "danger"
-        },
-        {
-            label: "New Analytics",
-            color: "warning"
-        }
-    ]
+  const accordionTabs = [
+    {
+      label: 'All Analytics',
+      color: 'success',
+    },
+    {
+      label: 'Favorite',
+      color: 'danger',
+    },
+    {
+      label: 'New Analytics',
+      color: 'warning',
+    },
+  ];
 
-    const onHandleAnalyticsTab = (index:number) => {
-        setActiveAccordionIndex(index)
-    }
+  const onHandleAnalyticsTab = (index: number) => {
+    setActiveAccordionIndex(index);
+  };
 
-    return {
-        activeAccordionIndex,
-        setActiveAccordionIndex,
-        accordionTabs,
-        onHandleAnalyticsTab
-    }
+  return {
+    activeAccordionIndex,
+    setActiveAccordionIndex,
+    accordionTabs,
+    onHandleAnalyticsTab,
+  };
 }
