@@ -13,15 +13,17 @@ export default function AnalyticsAccordionTabs() {
           onClick={() => onHandleAnalyticsTab(index)}
           className={`${
             index === activeAccordionIndex ? 'bg-primary-100' : ''
-          } flex flex-col justify-center h-10 rounded-md cursor-pointer`}
+          } flex flex-col justify-center h-11 rounded-md cursor-pointer`}
           key={index}
         >
           <div className="flex gap-2 items-center ml-8 mt-4">
-            <div className={`w-2 h-2 bg-${acc.color} rounded-full`} />
+            <div
+              className={`w-2 h-2 ${index === 0 ? 'bg-success' : index === 1 ? 'bg-danger' : 'bg-warning'} rounded-full`}
+            />
             <label
               className={`text-white ${
                 index === activeAccordionIndex ? 'opacity-100' : 'opacity-50'
-              } text-[13px] hover:opacity-100`}
+              } text-[12px] hover:opacity-100`}
             >
               {acc.label}
             </label>

@@ -9,7 +9,7 @@ export default function NavItem({ icon, label }: Props) {
   return (
     <div className="flex gap-3 items-center cursor-pointer">
       {icon}
-      <label className="text-[14px] text-white cursor-pointer">{label}</label>
+      <label className="text-[13px] text-white cursor-pointer">{label}</label>
     </div>
   );
 }
