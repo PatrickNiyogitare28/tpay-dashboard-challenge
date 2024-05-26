@@ -17,6 +17,9 @@ const config = {
         "2xl": "1400px",
       },
     },
+    fontFamily: {
+      roboto: ['Roboto', 'sans-serif'],
+    },
     extend: {
       colors: {
         "primary": "#231942",

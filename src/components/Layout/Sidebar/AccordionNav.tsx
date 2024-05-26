@@ -15,7 +15,7 @@ import Account from './Account';
 
 export default function AccordionNav() {
   return (
-    <div className="mt-8 flex flex-col justify-between min-h-[80vh]">
+    <div className="mt-8 flex flex-col justify-between min-h-[87vh]">
       <div>
         <Accordion type="single" collapsible className="px-6 w-full">
           <AccordionItem value="item-1" className="border-0">
