@@ -2,6 +2,9 @@ import Statistics from '@/components/Statistics';
 import Navigation from './Navigation';
 import Report from './Report';
 import Orders from './Orders';
+import MonthlyStats from './MonthlyStats';
+import Sales from './Sales';
+import TotalOrders from './Sales/TotalOrders';
 
 export default function Wrapper() {
   return (
@@ -14,7 +17,11 @@ export default function Wrapper() {
           <Report />
           <Orders />
         </div>
-        <div className="w-2/6 min-h-full bg-switch rounded-md"></div>
+        <div className="w-2/6 min-h-full rounded-md">
+          <MonthlyStats />
+          <Sales />
+          <TotalOrders />
+        </div>
       </div>
     </div>
   );

@@ -12,7 +12,7 @@ export default function NavHeader() {
           <input
             type="text"
             placeholder="Type keyword to search"
-            className="pl-10 pr-4 py-3 border rounded-md focus:outline-none focus:border-primary-300 focus:border-2 text-xs"
+            className="pl-10 pr-4 py-3 bg-transparent border rounded-md focus:outline-none focus:border-primary-300 focus:border-2 text-xs"
           />
           <MagnifyingGlass
             className="absolute left-3 text-primary-100"

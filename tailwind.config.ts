@@ -29,8 +29,8 @@ const config = {
         "success": "#52b788",
         "light":"#edf2f4",
         "switch": {
-          DEFAULT: "#bee9e8",
-          light: "#caf0f8"
+          DEFAULT: "#bbd0ff",
+          light: "#bbd0ff"
         },
         "danger": {
           DEFAULT: "#e63946",
