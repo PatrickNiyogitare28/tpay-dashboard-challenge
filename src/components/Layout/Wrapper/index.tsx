@@ -1,14 +1,16 @@
 import Statistics from '@/components/Statistics';
 import Navigation from './Navigation';
+import Report from './Report';
 
 export default function Wrapper() {
   return (
-    <div className="px-6">
+    <div className="px-6 bg-[#f8f9fa]">
       <Navigation />
 
-      <div className="min-h-[80vh] flex gap-2 mt-4">
+      <div className="min-h-[80vh] flex gap-8 mt-4">
         <div className="w-4/6 min-h-full">
           <Statistics />
+          <Report />
         </div>
         <div className="w-2/6 min-h-full bg-switch rounded-md"></div>
       </div>

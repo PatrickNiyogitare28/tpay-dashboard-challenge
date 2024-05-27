@@ -26,12 +26,12 @@ export default function AccordionNav() {
               />
             </AccordionTrigger>
             <AccordionContent className="ml-9">
-              <label className="text-white opacity-[0.5] text-[13px] hover:opacity-[1] cursor-pointer">
+              <label className="text-white opacity-[0.5] text-[12px] hover:opacity-[1] cursor-pointer">
                 Metrics
               </label>
             </AccordionContent>
             <AccordionContent className="ml-9">
-              <label className="text-white opacity-[0.5] text-[13px] hover:opacity-[1] cursor-pointer">
+              <label className="text-white opacity-[0.5] text-[12px] hover:opacity-[1] cursor-pointer">
                 Statistics
               </label>
             </AccordionContent>
@@ -68,17 +68,17 @@ export default function AccordionNav() {
               />
             </AccordionTrigger>
             <AccordionContent className="ml-9">
-              <label className="text-white opacity-[0.5] text-[13px] hover:opacity-[1] cursor-pointer">
+              <label className="text-white opacity-[0.5] text-[12px] hover:opacity-[1] cursor-pointer">
                 All
               </label>
             </AccordionContent>
             <AccordionContent className="ml-9">
-              <label className="text-white opacity-[0.5] text-[13px] hover:opacity-[1] cursor-pointer">
+              <label className="text-white opacity-[0.5] text-[12px] hover:opacity-[1] cursor-pointer">
                 Reports
               </label>
             </AccordionContent>
             <AccordionContent className="ml-9">
-              <label className="text-white opacity-[0.5] text-[13px] hover:opacity-[1] cursor-pointer">
+              <label className="text-white opacity-[0.5] text-[12px] hover:opacity-[1] cursor-pointer">
                 Saved
               </label>
             </AccordionContent>

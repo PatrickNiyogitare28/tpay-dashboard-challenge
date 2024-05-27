@@ -1,25 +1,22 @@
 import useStats from './hooks/useStats';
-import {
-  SparkAreaChart,
-  SparkLineChart,
-  SparkBarChart,
-  AreaChart,
-} from '@tremor/react';
+import { SparkLineChart } from '@tremor/react';
 
 export default function Statistics() {
   const { statistics } = useStats(); // Assuming useStats returns both statistics and chartdata
 
   return (
-    <div className="w-full flex gap-2">
+    <div className="w-full flex gap-2 py-2">
       {statistics.map((stat, index) => (
         <div
           key={index}
-          className={`"w-2/6" ${index === 1 ? 'bg-danger-light' : 'bg-switch-light'} p-4 rounded-md`}
+          className={`w-3/6 ${index === 1 ? 'bg-danger-light' : 'bg-switch-light'} p-4 rounded-md shadow`}
         >
-          <div className='flex gap-2 items-center h-[max-content]'>
+          <div className="flex gap-2 items-center h-[max-content]">
             <div>
-              <label className="text-sm text-gray-600 font-semibold">{stat.title}</label>
-              <p className='text-md font-bold'>{stat.amount}</p>
+              <label className="text-sm text-gray-600 font-semibold">
+                {stat.title}
+              </label>
+              <p className="text-md font-bold">{stat.amount}</p>
             </div>
             <div>
               <SparkLineChart
@@ -31,8 +28,10 @@ export default function Statistics() {
             </div>
           </div>
           <div className="flex mt-4 items-center w-full justify-between">
-            <label className='text-xs'>Compared to last month</label>
-            <label className='bg-white py-1 px-3 rounded-md text-[12px]'>{stat.rate}</label>
+            <label className="text-xs">Compared to last month</label>
+            <label className="bg-white py-1 px-3 rounded-md text-[12px]">
+              {stat.rate}
+            </label>
           </div>
         </div>
       ))}
