@@ -27,6 +27,7 @@ const config = {
         "primary-300": "#be95c4",
         "primary-400": "#e0b1cb",
         "success": "#52b788",
+        "light":"#edf2f4",
         "switch": {
           DEFAULT: "#bee9e8",
           light: "#caf0f8"

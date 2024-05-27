@@ -7,7 +7,7 @@ export default function Layout() {
       <div className="w-[15%] bg-primary h-full overflow-y-scroll">
         <Sidebar />
       </div>
-      <div className="w-[85%]">
+      <div className="w-[85%] overflow-y-scroll">
         <Wrapper />
       </div>
     </div>

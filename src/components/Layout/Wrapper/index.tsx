@@ -1,6 +1,7 @@
 import Statistics from '@/components/Statistics';
 import Navigation from './Navigation';
 import Report from './Report';
+import Orders from './Orders';
 
 export default function Wrapper() {
   return (
@@ -11,6 +12,7 @@ export default function Wrapper() {
         <div className="w-4/6 min-h-full">
           <Statistics />
           <Report />
+          <Orders />
         </div>
         <div className="w-2/6 min-h-full bg-switch rounded-md"></div>
       </div>
